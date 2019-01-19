@@ -1,2 +1,2 @@
 # blink03
-Change LED pin level HIGH/LOW period interactively by adding few lines into blink02.
+Once few lines added into blink02, LED pin level HIGH/LOW period could be changed interactively.
