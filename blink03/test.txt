@@ -1,7 +1,4 @@
-The following could be pasted into Arduino IDE console
-input box and click "Send" to draw image, lines, and 
-characters on WIFIBOY screen:
-
+ 50 setPeriodHIGH 450 setPeriodLOW
  wb_init ( initialize wifiboy 32 graphics )
  0 0 128 160 img wb_drawImage ( draw image 周子瑜 )
  2000 ms ( wait 2000 ms )
@@ -13,3 +10,4 @@ characters on WIFIBOY screen:
  z" WiFiBoy" 28 10 1 3 wb_drawString drop ( draw "WiFiBoy" )
  wbWHITE wbWHITE wb_setTextColor ( set text color )
  z" FVM02" 22 140 2 3 wb_drawString drop ( draw "Forth" )
+ 1000 setPeriodHIGH 1000 setPeriodLOW

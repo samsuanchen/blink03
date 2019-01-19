@@ -11,7 +11,7 @@
   model, check the Technical Specs of your board at:
   https://www.arduino.cc/en/Main/Products
 
-  derived from blink02, 4 more lines added to create 2 new words, 19 Jan 2019 by samsuanchen@gmail.com
+  derived from blink02, 6 more lines added to create 3 new words, 19 Jan 2019 by samsuanchen@gmail.com
 */
 
 #include <fvm02.h>                                  // ##### 1.1. load FVM the Forth virtual machine
@@ -27,6 +27,7 @@ int periodLOW = 1000;
 
 void setPeriodHIGH() { periodHIGH=F.dPop(); }       // ##### 2.1. define the function setPeriodHIGH
 void setPeriodLOW()  { periodLOW =F.dPop(); }       // ##### 2.2. define the function setPeriodLOW
+void getMillis() { F.dPush( millis() ); }           // ##### 2.3. define the function getMillis
 
 #define LED_BUILTIN 16 // for wifiboy 32
 
@@ -36,8 +37,9 @@ void setup() {
   extern Word* word_set;                            // ##### 3.1. request external word set (defined in fvm02_word_set.cpp)
   F.init( 115200, word_set );                       // ##### 3.2. in setup(), initialize F and the word set
   
-  F.newPrimitive( "setPeriodHIGH", setPeriodHIGH ); // ##### 4.1. add new primitive word setPeriodHIGH of F
-  F.newPrimitive( "setPeriodLOW",  setPeriodLOW  ); // ##### 4.2. add new primitive word setPeriodLOW  of F
+  F.newPrimitive( "setPeriodHIGH", setPeriodHIGH ); // ##### 4.1. add new primitive word setPeriodHIGH in F
+  F.newPrimitive( "setPeriodLOW",  setPeriodLOW  ); // ##### 4.2. add new primitive word setPeriodLOW  in F
+  F.newPrimitive( "getMillis"   ,  getMillis     ); // ##### 4.3. add new primitive word getMillis     in F
   
   // set LED_BUILTIN as a digital output divice (pin level become LOW).
   pinMode(LED_BUILTIN, OUTPUT);
