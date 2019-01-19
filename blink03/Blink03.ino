@@ -1,10 +1,8 @@
 /*
-  Blink03
+  Blink03 https://github.com/samsuanchen/blink03
 
-  Turns an LED on for one second, then off for one second, repeatedly.
-  Not using delay(), an alternative blink is given to run in the same feature of
-  Arduino basic example Blink, http://www.arduino.cc/en/Tutorial/Blink.
-  More over, a virtual machine is running in the same time.
+  Interactively turns LED on/off with different delay periods. This project is derived
+  from blink02 by adding 2 new words into virtual machine.
 
   Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
   it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
@@ -13,7 +11,7 @@
   model, check the Technical Specs of your board at:
   https://www.arduino.cc/en/Main/Products
 
-  derived from blink01, 4 lines added, 9 Jan 2019 by samsuanchen@gmail.com
+  derived from blink02, 4 more lines added to create 2 new words, 19 Jan 2019 by samsuanchen@gmail.com
 */
 
 #include <fvm02.h>                                  // ##### 1.1. load FVM the Forth virtual machine
