@@ -22,6 +22,6 @@
    
 5. Even more, 2 new words, namely shortHIGH and longHIGH , could be created in IDE input box as follows:
 
-                : shortHIGH 50 setPeriodHIGH 450 setPeriodLOW ;
-                : longHIGH 450 setPeriodHIGH 50 setPeriodLOW ;
+           : shortHIGH 50 setPeriodHIGH 450 setPeriodLOW ;
+           : longHIGH 450 setPeriodHIGH 50 setPeriodLOW ;
 
