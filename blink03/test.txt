@@ -1,3 +1,4 @@
+ getMillis . .( demo started ) cr
  50 setPeriodHIGH 450 setPeriodLOW
  wb_init ( initialize wifiboy 32 graphics )
  0 0 128 160 img wb_drawImage ( draw image 周子瑜 )
@@ -11,3 +12,4 @@
  wbWHITE wbWHITE wb_setTextColor ( set text color )
  z" FVM02" 22 140 2 3 wb_drawString drop ( draw "Forth" )
  1000 setPeriodHIGH 1000 setPeriodLOW
+ getMillis . .( demo ended ) cr
