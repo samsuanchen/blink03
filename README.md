@@ -17,4 +17,11 @@
 
 
 4. For example, sending "50 setPeriodHIGH 450 setPeriodLOW" to virtual machine, via IDE consle input, will
-   change the way LED blinks.
+   change the way LED blinks as short HIGH.
+   
+   
+5. Even more, 2 new words, namely shortHIGH and longHIGH , could be created in IDE input box as follows:
+
+                : shortHIGH 50 setPeriodHIGH 450 setPeriodLOW ;
+                : longHIGH 450 setPeriodHIGH 50 setPeriodLOW ;
+
