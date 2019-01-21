@@ -1,7 +1,6 @@
  cr getMillis dup .( demo started at ) .
  50 setPeriodHIGH 450 setPeriodLOW
  wb_init ( initialize wifiboy 32 graphics )
- : wb_init ;
  0 0 128 160 img wb_drawImage ( draw image 周子瑜 )
  2000 ms ( wait 2000 ms )
  : drawLines ( define a code to draw lines )
